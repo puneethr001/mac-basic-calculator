@@ -1,0 +1,61 @@
+ 
+ :root {
+    --scale: 1px;
+    --window-height: calc(332 * var(--scale));
+    --window-width: calc(232 * var(--scale));
+ }
+ 
+ 
+ body {
+    background-color: black;
+    height: 100vh;
+    color:white;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  table {
+    table-layout: fixed;
+    width:var(--window-width);
+  }
+  table, td, tr {
+    border-collapse:collapse;
+  }
+  td {
+    font-size:64px;
+    height: calc(var(--window-height)/7);
+    background-color: #6b5b7f;
+    text-align: center;
+    font-size: calc(20 * var(--scale));
+    width: 10px !important;
+    border: 1px solid #3A2655;
+   }
+   td:hover {
+    background-color: #a59db2;
+   }
+   tr td:last-child:hover {
+    background-color: #CB7D07;
+   }
+   #display {
+    height:calc(var(--window-height) /4);
+    text-align: right;
+    padding-right: 20px;
+    font-size:calc(var(--scale) * 54);
+    font-weight: 100;
+    vertical-align: bottom;
+    background-color: #3A2655;
+   }
+   tr:nth-child(2) td {
+    background-color: #4D3B66;
+   }
+   tr td:last-child {
+    background-color: #FF9F0B;
+   }
+   tr:last-child td {
+    height: calc(var(--window-height) / 7 + 9px) !important;
+   }
